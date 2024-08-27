@@ -1,0 +1,29 @@
+{
+    "name": "t_capstone_use-a-public-api",
+    "version": "1.0.0",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "npm run index.js",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": "Capston Project: Build a Website by Using a Public API",
+    "dependencies": {
+        "axios": "^1.7.5",
+        "body-parser": "^1.20.2",
+        "ejs": "^3.1.10",
+        "express": "^4.19.2",
+        "helmet": "^7.1.0",
+        "https": "^1.0.0",
+        "nodemon": "^3.1.4"
+    },
+    "homepage": "https://alchawk.github.io/publicapirijks",
+    "devDependencies": {
+        "gh-pages": "^6.1.1"
+    }
+}

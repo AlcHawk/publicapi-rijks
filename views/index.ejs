@@ -1,0 +1,35 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Use Public API</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Titan+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="styles/main.css">
+    </head>
+
+    <body>
+        <h1>Random Collection of Rijksmuseum</h1>
+        <div class="card" style="background-image: url('<%= rjColImgUrl %>');">
+            <p>
+                <% if (locals.rjColImgUrl === "./public/images/whisper-img.jpg") { %>
+                    This art object is not yet available digitally.
+                <% } %>
+            </p>
+        </div>
+
+        <p class="user">
+            <%= rjColTitle %>
+        </p>
+
+        <% if (locals.rjColDesc) { %>
+        <p class="desc">
+            <%= rjColDesc %>
+        </p>
+        <% } %>
+
+        <p>
+            <a href="<%= rjColUrl %>" target="_blank" class="link">Collection in Rijksmuseum</a>
+        </p>
+    </body>
+</html>
